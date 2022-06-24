@@ -1,0 +1,42 @@
+/*gasan si colvis*/
+div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-collection button.dt-button.active:not(.disabled), div.dt-button-collection div.dt-button:active:not(.disabled), div.dt-button-collection div.dt-button.active:not(.disabled), div.dt-button-collection a.dt-button:active:not(.disabled), div.dt-button-collection a.dt-button.active:not(.disabled) {
+            background-color: #6c757d;
+        }
+  button.dt-button:active:not(.disabled):hover:not(.disabled), button.dt-button.active:not(.disabled):hover:not(.disabled), div.dt-button:active:not(.disabled):hover:not(.disabled), div.dt-button.active:not(.disabled):hover:not(.disabled), a.dt-button:active:not(.disabled):hover:not(.disabled), a.dt-button.active:not(.disabled):hover:not(.disabled) {
+            box-shadow: inset 1px 1px 3px #999999;
+            background-color: #cccccc;
+        }
+
+/*gsan pagination*/
+.pagination > li > a
+{
+    background-color: white;
+    color: #343a40;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: #343a40 !Important;
+    border: solid 1px #343a40 !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #343a40 !Important;
+    border: solid 1px #343a40;
+}
+
+.apalu:hover{
+    filter:contrast(125%) drop-shadow(8px 8px 10px gray);
+}
