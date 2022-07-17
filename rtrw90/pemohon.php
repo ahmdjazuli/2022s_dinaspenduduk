@@ -1,4 +1,6 @@
-<?php require('header-admin.php'); require('../koneksi.php'); require('../tgl_indo.php'); error_reporting(0); ?>
+<?php require('header-admin.php'); require('../koneksi.php'); require('../tgl_indo.php'); error_reporting(0); 
+$idpemohon = $_GET['idpemohon'];
+$detail = mysqli_query($kon, "SELECT * FROM `pemohon_detail` WHERE idpemohon = '$idpemohon'"); ?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -56,7 +58,7 @@
                           <tr class="text-center">
                           <td><?= $no++ ?></td>
                           <td><?= $data['nama'].' ('.$data['jk'].')' ?></td>           
-                          <td><?= $data['nik'] ?></td>           
+                          <td><a href="pemohon.php?idpemohon=<?= $data['idpemohon'] ?>"><?= $data['nik'] ?></a></td>           
                           <td><?= $data['darah'] ?></td>           
                           <td><?= $data['ttl1'].$data['ttl2'] ?></td>
                           <td><?= $data['perkawinan'] ?></td>
@@ -64,6 +66,8 @@
                           <td><?= $data['telp'] ?></td>
                           <td><?= $data['alamat'].' RT '.$data['rt'].' RW '.$data['rw'].', Kelurahan '.$data['kelurahan'].', Kecamatan '.$data['kemacatan'].', Kota '.$data['kota'] ?></td>
                           <td>
+                            <button class="btn btn-dark" type="button" data-toggle="tooltip" data-placement="bottom" title="Tambah"><a class="text-white" href="pemohondetail_input.php?idpemohon=<?= $data['idpemohon'] ?>"><i class="fas fa-calendar-plus"></i></a></button>
+
                             <button class="btn btn-dark" type="button"><a href="pemohon_edit.php?idpemohon=<?= $data['idpemohon'] ?>" class="text-white"><i class="fas fa-calendar-minus"></i></a></button>
                             
                             <button class="btn btn-dark" type="button"><a class="text-white" href="delete.php?idpemohon=<?= $data['idpemohon'] ?>"><i class="fas fa-calendar-times"></i></a></button>
@@ -99,6 +103,49 @@
       </div>
       <!-- /.container-fluid -->
     </section>
+    <?php 
+    if(mysqli_num_rows($detail)> 0){ ?>
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h2 style="display:inline;">Detail</h2>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="dataTables1" class="table table-bordered table-sm">
+                  <thead class="table-dark">
+                    <tr class="text-center">
+                        <th>No</th>
+                        <th>Keterangan</th>
+                        <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <?php 
+                      $no = 1;
+                      while($data = mysqli_fetch_array($detail)){
+                        ?>
+                          <tr class="text-center">
+                          <td><?= $no++ ?></td>
+                          <td><?= $data['ket'] ?></td>           
+                          <td><?= $data['status'] ?></td>          
+                        <?php 
+                      }
+                    ?>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+              <hr>
+            </div> <!-- /.card -->
+          </div> <!-- /.col -->
+        </div> <!-- /.row -->
+      </div> <!-- /.container-fluid -->
+    </section> <!-- /.content -->
+    <?php }?>
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->

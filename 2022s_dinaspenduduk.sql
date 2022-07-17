@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 24, 2022 at 02:35 PM
+-- Generation Time: Jul 17, 2022 at 12:54 PM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
@@ -145,16 +145,16 @@ CREATE TABLE `kk` (
 --
 
 INSERT INTO `kk` (`idkk`, `nokk`, `idpemohon`, `waktu1`, `file1`, `file2`, `file3`, `file4`, `status`) VALUES
-(5, '630309249593339393', 8, '2022-01-11 22:22:00', '171SuratPengantarFAKE.jpg', '639bukunikah.fake.jpg', '503aktaperkawinan.fake.jpg', '779', 'Disetujui'),
-(6, '630309277593339121', 6, '2022-02-04 10:13:00', '146SuratPengantarFAKE.jpg', '201bukunikah1.fake.jpg', '180aktapekarwinan2.fake.jpg', '732', 'Disetujui'),
-(7, '630308278103337000', 7, '2022-02-04 10:21:00', '645SuratPengantarFAKE.jpg', '920bukunikah.fake.jpg', '830aktapekarwinan2.fake.jpg', '314', 'Disetujui'),
-(8, '630309277571839177', 10, '2022-02-04 10:55:00', '623SuratPengantarFAKE.jpg', '995bukunikah.fake.jpg', '167aktapekarwinan2.fake.jpg', '404', 'Disetujui'),
-(9, '630308279102631000', 11, '2022-02-04 11:12:00', '147SuratPengantarFAKE.jpg', '107bukunikah1.fake.jpg', '483aktapekarwinan1.fake.jpg', '570', 'Disetujui'),
-(10, '630308278102226111', 12, '2022-02-04 15:40:00', '282SuratPengantarFAKE.jpg', '913', '776', '236', 'Ditolak'),
-(11, '630308279772833000', 12, '2022-02-04 15:43:00', '363SuratPengantarFAKE.jpg', '369bukunikah.fake.jpg', '658aktaperkawinan.fake.jpg', '958', 'Disetujui'),
+(5, '630702450700001', 8, '2022-01-11 22:22:00', '171SuratPengantarFAKE.jpg', '639bukunikah.fake.jpg', '503aktaperkawinan.fake.jpg', '779', 'Disetujui'),
+(6, '630703430270002', 6, '2022-02-04 10:13:00', '146SuratPengantarFAKE.jpg', '201bukunikah1.fake.jpg', '180aktapekarwinan2.fake.jpg', '732', 'Disetujui'),
+(7, '6307034306010001', 7, '2022-02-04 10:21:00', '645SuratPengantarFAKE.jpg', '920bukunikah.fake.jpg', '830aktapekarwinan2.fake.jpg', '314', 'Disetujui'),
+(8, '6307060803660002', 10, '2022-02-04 10:55:00', '623SuratPengantarFAKE.jpg', '995bukunikah.fake.jpg', '167aktapekarwinan2.fake.jpg', '404', 'Disetujui'),
+(9, '6307051704070007', 11, '2022-02-04 11:12:00', '147SuratPengantarFAKE.jpg', '107bukunikah1.fake.jpg', '483aktapekarwinan1.fake.jpg', '570', 'Disetujui'),
+(10, '6307021708750004', 12, '2022-02-04 15:40:00', '282SuratPengantarFAKE.jpg', '913', '776', '236', 'Ditolak'),
+(11, '6307021708750004', 12, '2022-02-04 15:43:00', '363SuratPengantarFAKE.jpg', '369bukunikah.fake.jpg', '658aktaperkawinan.fake.jpg', '958', 'Disetujui'),
 (12, '-', 13, '2022-02-04 15:56:00', '281SuratPengantarFAKE.jpg', '884', '973', '687', 'Ditolak'),
-(13, '630308212303338002', 13, '2022-02-04 15:57:00', '540SuratPengantarFAKE.jpg', '454bukunikah.fake.jpg', '185aktapekarwinan2.fake.jpg', '796', 'Disetujui'),
-(14, '630308278102348050', 14, '2022-02-04 16:00:00', '191SuratPengantarFAKE.jpg', '662bukunikah1.fake.jpg', '866aktapekarwinan1.fake.jpg', '707SuratPengantarFAKE.jpg', 'Menunggu');
+(13, '6307082103920004', 13, '2022-02-04 15:57:00', '540SuratPengantarFAKE.jpg', '454bukunikah.fake.jpg', '185aktapekarwinan2.fake.jpg', '796', 'Disetujui'),
+(14, '6307051705630004', 14, '2022-02-04 16:00:00', '191SuratPengantarFAKE.jpg', '662bukunikah1.fake.jpg', '866aktapekarwinan1.fake.jpg', '707SuratPengantarFAKE.jpg', 'Menunggu');
 
 -- --------------------------------------------------------
 
@@ -187,16 +187,45 @@ CREATE TABLE `pemohon` (
 --
 
 INSERT INTO `pemohon` (`idpemohon`, `nik`, `nama`, `telp`, `jk`, `alamat`, `ttl1`, `ttl2`, `agama`, `perkawinan`, `pekerjaan`, `rt`, `rw`, `kelurahan`, `kecamatan`, `kota`, `darah`) VALUES
-(5, '6372040101980001', 'Ridwan Kamil', '089666714255', 'L', 'Jl. Guntung Manggis kota Banjarbaru No.17', 'Martapura, ', '1998-12-21', 'Islam', 'Belum Kawin', 'Mahasiswa', '01', '03', 'Landasan Ulin', 'Liang anggang', 'Banjarbaru', 'A'),
-(6, '6303011036995466', 'Gita Wirjawan', '089763518855', 'L', 'Gg. Hijrah Jaya', 'Martapura, ', '1994-08-18', 'Kong Hu Chu', 'Kawin', 'Influenser', '02', '02', 'Sekumpul', 'Martapura', 'Banjarbaru', 'AB'),
-(7, '6303099938711923', 'Pendeta Yerry', '089361126363', 'L', 'Komplek Pangeran Antasari no.23', 'Banjarbaru, ', '1980-08-03', 'Islam', 'Belum Kawin', 'Wirausaha', '03', '05', 'Banjar', 'Banjar', 'Martapura', 'O'),
-(8, '6303011036995117', 'Georgia Felicya', '08535386355', 'P', 'Gg. Melati no.11', 'Martapura, ', '1994-08-18', 'Kristen', 'Belum Menikah', 'Wirausaha', '01', '05', 'Banjar', 'Sungai Sipai', 'Banjarbaru', '-'),
-(9, '6303011138712812', 'Mamat Suryo', '081525779121', 'L', 'Jl. Melayu', 'Banjarmasin, ', '1990-05-02', 'Kong Hu Chu', 'Kawin', 'Youtuber', '02', '04', 'Landasan Ulin', 'Liang anggang', 'Banjarbaru', 'AB'),
-(10, '6303011038895188', 'Dinda Fitriah', '089675715288', 'P', ' Jl. TB Simatupang', 'Banjarmasin, ', '1997-02-16', 'Kong Hu Chu', 'Belum Kawin', 'Youtuber', '01', '01', 'Landasan Ulin', 'Liang anggang', 'Banjarbaru', 'A'),
-(11, '6303065138611960', 'Wiro Sableng', '089723718219', 'L', 'Gg. Melati', 'Banjarmasin, ', '2022-02-18', 'Hindu', 'Kawin', 'Wirausaha', '03', '01', 'Banjar', 'Banjar', 'Martapura', 'AB'),
-(12, '6303098738711712', 'Erlangga', '089522114233', 'L', 'Jl. Melati ', 'Martapura, ', '1990-02-01', 'Islam', 'Belum Kawin', 'Mahasiswa', '02', '04', 'Banjar', 'Banjar', 'Martapura', 'O'),
-(13, '6303022036995106', 'Rifki Rifaldi', '089668114911', 'L', 'Jl. Jeruk', 'Banjarmasin, ', '1996-12-28', 'Islam', 'Kawin', 'Wirausaha', '01', '02', 'Banjar', 'Banjar', 'Banjarbaru', 'AB'),
-(14, '6303072032975111', 'Shelly', '089520023246', 'P', 'Gg. Mawar Putih', 'Tanggerang, ', '2022-02-16', 'Katolik', 'Kawin', 'Mahasiswa', '04', '01', 'Sekumpul', 'Liang anggang', 'Banjarbaru', 'AB');
+(5, '6307022507810002', 'Misransyah', '082198009912', 'P', 'Jl. Guntung Manggis', 'Banua Budi, ', '1998-01-05', 'Islam', 'Belum Kawin', 'Pedagang', '01', '03', 'Banua Budi', 'Banua Budi', 'Banjarbaru', 'AB'),
+(6, '630703430270002', 'Halimatussakdiah', '085377489899', 'P', 'Gg. Hijrah Jaya', 'Banua Binjai, ', '2000-08-25', 'Islam', 'Belum Kawin', 'Mahasiswa', '02', '02', 'Banua Binjai', 'Martapura', 'Banua Binjai', 'O'),
+(7, '6307034306010001', 'Norliana', '087719902155', 'P', 'Komplek Pangeran Antasari no.23', 'Mandiangin, ', '2000-09-11', 'Islam', 'Belum Kawin', 'Mahasiswa', '03', '05', 'Mandiangin', 'Mandiangin', 'Mandiangin', 'B'),
+(8, '630702450700001', 'Sarmila', '081360109810', 'P', 'Gg. Melati no.11', 'ilung, ', '2000-08-01', 'Budha', 'Belum Menikah', 'Mahasiswa', '01', '05', 'Banjar', 'Banjar', 'ilung', 'B'),
+(9, '6307052612790002', 'Ardiansyah', '085391884787', 'L', 'Jl. Melayu', 'Batu Benawa, ', '2001-07-21', 'Islam', 'Belum Kawin', 'Mahasiswa', '02', '04', 'Banjar', 'Banjar', 'Batu Benawa', 'B'),
+(10, '6307060803660002', 'M. Ramli', '082159606370', 'L', 'Birayang', 'Birayang, ', '1997-01-02', 'Islam', 'Kawin', 'PNS', '01', '01', 'Birayang', 'Birayang', 'Banjarbaru', 'A'),
+(11, '6307051704070007', 'M. Adrian', '081358005678', 'L', 'Gg. Melati', 'Mualimin, ', '1990-05-20', 'Islam', 'Kawin', 'PNS', '03', '01', 'Mualimin', 'Mualimin', 'Martapura', 'A'),
+(12, '6307021708750004', 'M. Agus', '081345061093', 'L', 'Birayang', 'Birayang, ', '1999-08-19', 'Islam', 'Kawin', 'Wirausaha', '02', '04', 'Birayang', 'Birayang', 'Birayang', 'A'),
+(13, '6307082103920004', 'Hafni', '082151003890', 'L', 'Jl. Jeruk', 'Aluan, ', '1998-07-25', 'Islam', 'Belum Kawin', 'Wiraswasta', '01', '02', 'Banjar', 'Banjar', 'Aluan', 'O'),
+(14, '6307051705630004', 'Aswad', '085248445890', 'P', 'Komplek Guntur', 'Banjarbaru , ', '1994-03-18', 'Islam', 'Kawin', 'PNS', '04', '01', 'Sekumpul', 'Liang anggang', 'Banjarbaru', 'O');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pemohon_detail`
+--
+
+CREATE TABLE `pemohon_detail` (
+  `idpemohon_detail` int(5) NOT NULL,
+  `idpemohon` int(5) NOT NULL,
+  `ket` text NOT NULL,
+  `status` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `pemohon_detail`
+--
+
+INSERT INTO `pemohon_detail` (`idpemohon_detail`, `idpemohon`, `ket`, `status`) VALUES
+(1, 9, 'Pengajuan KTP', 'Disetujui'),
+(2, 9, 'SKK', 'Disetujui'),
+(3, 9, 'SKBM', 'Disetujui'),
+(4, 9, 'Akta Kelahiran', 'Disetujui'),
+(5, 14, 'KK', 'Disetujui'),
+(6, 14, 'Akta Kelahiran', 'Disetujui'),
+(7, 14, 'SKPD', 'Disetujui'),
+(8, 11, 'Pengajuan KTP', 'Ditolak'),
+(9, 11, 'SKBM', 'Disetujui'),
+(10, 11, 'KK', 'Disetujui');
 
 -- --------------------------------------------------------
 
@@ -406,6 +435,13 @@ ALTER TABLE `pemohon`
   ADD PRIMARY KEY (`idpemohon`);
 
 --
+-- Indexes for table `pemohon_detail`
+--
+ALTER TABLE `pemohon_detail`
+  ADD PRIMARY KEY (`idpemohon_detail`),
+  ADD KEY `idpemohon` (`idpemohon`);
+
+--
 -- Indexes for table `pengajuan`
 --
 ALTER TABLE `pengajuan`
@@ -481,6 +517,12 @@ ALTER TABLE `pemohon`
   MODIFY `idpemohon` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
+-- AUTO_INCREMENT for table `pemohon_detail`
+--
+ALTER TABLE `pemohon_detail`
+  MODIFY `idpemohon_detail` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
 -- AUTO_INCREMENT for table `pengajuan`
 --
 ALTER TABLE `pengajuan`
@@ -538,6 +580,12 @@ ALTER TABLE `detail`
 --
 ALTER TABLE `kelahiran`
   ADD CONSTRAINT `kelahiran_ibfk_1` FOREIGN KEY (`idpemohon`) REFERENCES `pemohon` (`idpemohon`);
+
+--
+-- Constraints for table `pemohon_detail`
+--
+ALTER TABLE `pemohon_detail`
+  ADD CONSTRAINT `pemohon_detail_ibfk_1` FOREIGN KEY (`idpemohon`) REFERENCES `pemohon` (`idpemohon`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `pengajuan`

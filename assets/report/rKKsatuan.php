@@ -39,7 +39,7 @@
         Kecamatan : <span style="text-transform: uppercase;"><?= $run['kecamatan']?></span><br>
         Kota : <span style="text-transform: uppercase;"><?= $run['kota']?></span><br>
     </span>
-  <?php } $kepala = $run['nama'];
+  <?php $kepala = $run['nama']; } 
 }?>
   <table class="table table-responsive table-bordered">
     <thead class="text-center">
@@ -74,7 +74,7 @@ while( $data = mysqli_fetch_array($detail2) ) : ?>
   <td><?= $data['nama'] ?></td>
   <td><?= $data['nik'] ?></td>
   <td><?php if($data['jk']=='P'){echo 'PEREMPUAN'; }else{echo 'LAKI-LAKI'; } ?></td>
-  <td><?= date("d-m-Y", strtotime($data['ttl1'])); ?></td>
+  <td><?= str_replace(',','', $data['ttl1']); ?></td>
   <td><?= $data['ttl2'] ?></td>
   <td><?= $data['agama'] ?></td>
   <td><?= $data['pendidikan'] ?></td>

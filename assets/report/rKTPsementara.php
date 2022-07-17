@@ -1,7 +1,7 @@
 <?php 
 require "../../koneksi.php";
 	$idpengajuan = $_GET['idpengajuan'];
-	$result = mysqli_query($kon, "SELECT * FROM pengajuan INNER JOIN pemohon WHERE idpengajuan = '$idpengajuan'");
+	$result = mysqli_query($kon, "SELECT * FROM pengajuan INNER JOIN pemohon ON pengajuan.idpemohon = pemohon.idpemohon WHERE idpengajuan = '$idpengajuan'");
 	$data = mysqli_fetch_array($result);
 ?>
 

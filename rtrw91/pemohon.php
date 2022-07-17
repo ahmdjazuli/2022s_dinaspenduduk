@@ -1,4 +1,5 @@
-<?php require('header-admin.php'); require('../koneksi.php'); require('../tgl_indo.php'); error_reporting(0); ?>
+<?php require('header-admin.php'); require('../koneksi.php'); require('../tgl_indo.php'); error_reporting(0);
+$detail = mysqli_query($kon, "SELECT * FROM `pemohon_detail` WHERE idpemohon = '$idpemohon'");  ?>
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -95,6 +96,49 @@
       <!-- /.container-fluid -->
     </section>
     <!-- /.content -->
+    <?php 
+    if(mysqli_num_rows($detail)> 0){ ?>
+    <section class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h2 style="display:inline;">Detail</h2>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="dataTables1" class="table table-bordered table-sm">
+                  <thead class="table-dark">
+                    <tr class="text-center">
+                        <th>No</th>
+                        <th>Keterangan</th>
+                        <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <?php 
+                      $no = 1;
+                      while($data = mysqli_fetch_array($detail)){
+                        ?>
+                          <tr class="text-center">
+                          <td><?= $no++ ?></td>
+                          <td><?= $data['ket'] ?></td>           
+                          <td><?= $data['status'] ?></td>          
+                        <?php 
+                      }
+                    ?>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+              <hr>
+            </div> <!-- /.card -->
+          </div> <!-- /.col -->
+        </div> <!-- /.row -->
+      </div> <!-- /.container-fluid -->
+    </section> <!-- /.content -->
+    <?php }?>
   </div>
   <!-- /.content-wrapper -->
 
