@@ -104,7 +104,7 @@ $detail = mysqli_query($kon, "SELECT * FROM `pemohon_detail` WHERE idpemohon = '
           <div class="col-12">
             <div class="card">
               <div class="card-header">
-                <h2 style="display:inline;">Detail</h2>
+                <h2 style="display:inline;">Riwayat Permohonan</h2>
               </div>
               <!-- /.card-header -->
               <div class="card-body">

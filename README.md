@@ -13,6 +13,15 @@ Bahasa Pemograman :
 2. Javascript
 3. CSS
 
+PEMBAHARUAN 3 :
+1. Kata "Detail" diubah jadi "Riwayat Permohonan".
+2. Cetak Satuan SKPD + SKPK belum ada.
+3. Riwayat Permohonan sudah dibuat kesemua "Pemohon".
+4. Rekapan data keseluruhan dari tiap pengajuan masing" 5 data.
+	- Pengajuan KTP, SKK, SKBM, KK, Akta Kelahiran -> Februari 2022 Disetujui
+	- Akta Pengangkatan Anak, SKPD, SKPK -> Juli 2022 Disetujui
+
+
 PEMBAHARUAN 2 :
 1. Data Pemohon diperbaharui dengan data sesui instanti 10 biji.
 2. Memperbaiki beberapa Bug.

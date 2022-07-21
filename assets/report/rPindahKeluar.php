@@ -38,10 +38,10 @@ require 'header-cetak.php';
         <th>No</th>
         <th>Waktu (WITA)</th>
         <th>Pemohon</th>
+        <th>Alamat Tujuan</th>
         <th>Surat Keterangan Pindah</th>
-        <th>KK Asli</th>
+        <th>KK</th>
         <th>KTP</th>
-        <th>Fotokopi Buku Nikah</th>
       </tr>
     </thead>
 <?php 

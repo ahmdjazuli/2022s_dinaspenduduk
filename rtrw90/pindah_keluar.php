@@ -38,9 +38,9 @@
                         <th>Waktu (WITA)</th>
                         <th>Pemohon</th>
                         <th>Alamat Tujuan</th>
+                        <th>Surat Keterangan Pindah</th>
                         <th>KK</th>
                         <th>KTP</th>
-                        <th>Fotokopi Buku Nikah</th>
                         <th>Status</th>
                         <th></th>
                     </tr>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 17, 2022 at 12:54 PM
+-- Generation Time: Jul 21, 2022 at 05:23 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
@@ -51,8 +51,11 @@ CREATE TABLE `anak` (
 --
 
 INSERT INTO `anak` (`idanak`, `idpemohon`, `waktu1`, `file1`, `file2`, `file3`, `file4`, `anaknya`, `pasangan`, `tempatlahir`, `tgllahir`, `tglacc`, `stbld`, `noak`, `status`) VALUES
-(3, 14, '2022-06-24 08:06:00', '886aktakelahiran.fake.jpg', '3621.jpg', '699bukunikah.fake.jpg', '8243.jpg', 'Celline Gergio', 'Qory Gore', 'BANJAR', 'DUAPULUH SEMBILAN - bulan DESEMBER - tahun SERIBU SEMBILANRATUS SEMBILANPULUH TUJUH', '- Dua Belas - Januari - Tahun Duaribu Duapuluh Dua', '1920 No. 751 jo 1927 No. 564', '1413/TLB/VII-2002.-', 'Disetujui'),
-(4, 13, '2022-06-24 09:28:00', '293aktakelahiran.fake.jpg', '1945.jpg', '956aktaperkawinan.fake.jpg', '9972.jpg', 'Ayu Rifki', 'Ayu Tingting', 'BANJARBARU', 'DUAPULUH LIMA - bulan AGUSTUS - tahun DUARIBU SATU', '- Dua Puluh Empat - Juni - Tahun Duaribu Duapuluh Dua', '1920 No. 751 jo 1927 No. 564', '1702/TLB/XII-2004.-', 'Disetujui');
+(3, 14, '2022-07-19 08:06:00', '886aktakelahiran.fake.jpg', '3621.jpg', '699bukunikah.fake.jpg', '8243.jpg', 'Celline Gergio', 'Qory Gore', 'BANJAR', 'DUAPULUH SEMBILAN - bulan DESEMBER - tahun SERIBU SEMBILANRATUS SEMBILANPULUH TUJUH', '- Dua Belas - Januari - Tahun Duaribu Duapuluh Dua', '1920 No. 751 jo 1927 No. 564', '1413/TLB/VII-2002.-', 'Disetujui'),
+(4, 13, '2022-07-18 09:28:00', '293aktakelahiran.fake.jpg', '1945.jpg', '956aktaperkawinan.fake.jpg', '9972.jpg', 'Ayu Rifki', 'Ayu Tingting', 'BANJARBARU', 'DUAPULUH LIMA - bulan AGUSTUS - tahun DUARIBU SATU', '- Dua Puluh Empat - Juni - Tahun Duaribu Duapuluh Dua', '1920 No. 751 jo 1927 No. 564', '1702/TLB/XII-2004.-', 'Disetujui'),
+(5, 9, '2022-07-21 10:41:00', '610aktakelahiran.fake.jpg', '999Kartu.Keluarga.Fake.jpg', '810aktaperkawinan.fake.jpg', '9644.jpg', 'Eric', 'Aidan', 'BINJAI', 'DUAPULUH SEMBILAN - bulan DESEMBER - tahun DUA RIBU SERIBU SEBELAS', '- Sebelas - Januari - Tahun Duaribu Duapuluh Dua', '1920 No. 751 jo 1927 No. 564', '1413/TLB/VII-2002.-', 'Disetujui'),
+(6, 6, '2022-07-21 10:43:00', '356aktakelahiran1.fake.jpg', '150Kartu.Keluarga.Fake.jpg', '151aktapekarwinan2.fake.jpg', '2001.jpg', 'Ali Pigaro', 'Nash', 'BANJARMASIN', 'SEBELAS - bulan MARET - tahun DUA RIBU SERIBU SEBELAS', '- Sebelas - Januari - Tahun Duaribu Duapuluh Dua', '1920 No. 751 jo 1927 No. 564', '1413/TLB/VII-2002.-', 'Disetujui'),
+(7, 12, '2022-07-21 10:46:00', '571aktakelahiran1.fake.jpg', '6173.jpg', '754bukunikah1.fake.jpg', '2075.jpg', 'Jesse', 'Dana', 'JAWA TIMUR', 'DUAPULUH EMPAT - bulan JANUARI - tahun DUARIBU DUA', '- Sebelas - Januari - Tahun Duaribu Duapuluh Dua', '1920 No. 751 jo 1927 No. 564', '1413/TLB/VII-2002.-', 'Disetujui');
 
 -- --------------------------------------------------------
 
@@ -225,7 +228,35 @@ INSERT INTO `pemohon_detail` (`idpemohon_detail`, `idpemohon`, `ket`, `status`) 
 (7, 14, 'SKPD', 'Disetujui'),
 (8, 11, 'Pengajuan KTP', 'Ditolak'),
 (9, 11, 'SKBM', 'Disetujui'),
-(10, 11, 'KK', 'Disetujui');
+(10, 11, 'KK', 'Disetujui'),
+(11, 13, 'KK', 'Disetujui'),
+(12, 13, 'Akta Pengangkatan Anak', 'Disetujui'),
+(13, 13, 'SKPK', 'Disetujui'),
+(14, 6, 'Pengajuan KTP', 'Disetujui'),
+(15, 6, 'SKK', 'Disetujui'),
+(16, 6, 'SKBM', 'Disetujui'),
+(17, 6, 'KK', 'Disetujui'),
+(18, 6, 'Akta Kelahiran', 'Disetujui'),
+(19, 12, 'Pengajuan KTP', 'Disetujui'),
+(20, 12, 'SKBM', 'Ditolak'),
+(21, 12, 'KK', 'Disetujui'),
+(22, 10, 'Pengajuan KTP', 'Disetujui'),
+(23, 10, 'SKBM', 'Disetujui'),
+(24, 10, 'KK', 'Disetujui'),
+(25, 10, 'Akta Kelahiran', 'Disetujui'),
+(26, 5, 'Pengajuan KTP', 'Disetujui'),
+(27, 5, 'SKBM', 'Disetujui'),
+(28, 5, 'Akta Kelahiran', 'Disetujui'),
+(29, 7, 'Pengajuan KTP', 'Disetujui'),
+(30, 7, 'SKK', 'Disetujui'),
+(31, 7, 'SKBM', 'Disetujui'),
+(32, 7, 'KK', 'Disetujui'),
+(33, 7, 'Akta Kelahiran', 'Disetujui'),
+(34, 8, 'Pengajuan KTP', 'Disetujui'),
+(35, 8, 'SKK', 'Disetujui'),
+(36, 8, 'SKBM', 'Disetujui'),
+(37, 8, 'KK', 'Disetujui'),
+(38, 8, 'Akta Kelahiran', 'Disetujui');
 
 -- --------------------------------------------------------
 
@@ -282,7 +313,11 @@ CREATE TABLE `pindah_datang` (
 --
 
 INSERT INTO `pindah_datang` (`idpindahdatang`, `idpemohon`, `waktu1`, `file1`, `file2`, `file3`, `file4`, `status`) VALUES
-(2, 14, '2022-06-24 10:25:00', '297SuratKeteranganPindah.jpg', '874Kartu.Keluarga.Fake.jpg', '4044.jpg', '865bukunikah.fake.jpg', 'Disetujui');
+(2, 14, '2022-07-17 10:25:00', '297SuratKeteranganPindah.jpg', '874Kartu.Keluarga.Fake.jpg', '4044.jpg', '865bukunikah.fake.jpg', 'Disetujui'),
+(3, 5, '2022-07-20 10:52:00', '647SuratKeteranganPindah.jpg', '718Kartu.Keluarga.Fake.jpg', '7023.jpg', '867bukunikah.fake.jpg', 'Disetujui'),
+(4, 6, '2022-07-21 10:53:00', '452SuratKeteranganPindah.jpg', '907Kartu.Keluarga.Fake.jpg', '5975.jpg', '616bukunikah1.fake.jpg', 'Disetujui'),
+(5, 10, '2022-07-21 11:01:00', '946SuratKeteranganPindah.jpg', '258Kartu.Keluarga.Fake.jpg', '9024.jpg', '536bukunikah1.fake.jpg', 'Disetujui'),
+(6, 12, '2022-07-21 11:04:00', '136SuratKeteranganPindah.jpg', '705Kartu.Keluarga.Fake.jpg', '2323.jpg', '164bukunikah.fake.jpg', 'Disetujui');
 
 -- --------------------------------------------------------
 
@@ -306,7 +341,11 @@ CREATE TABLE `pindah_keluar` (
 --
 
 INSERT INTO `pindah_keluar` (`idpindahkeluar`, `idpemohon`, `waktu1`, `file1`, `file2`, `file3`, `tujuan`, `status`) VALUES
-(2, 13, '2022-06-24 20:25:00', '661SuratKeteranganPindah.jpg', '758Kartu.Keluarga.Fake.jpg', '2761.jpg', 'Martapura', 'Disetujui');
+(2, 13, '2022-07-19 20:25:00', '661SuratKeteranganPindah.jpg', '758Kartu.Keluarga.Fake.jpg', '2761.jpg', 'Martapura', 'Disetujui'),
+(3, 6, '2022-07-20 10:55:00', '183SuratKeteranganPindah.jpg', '272Kartu.Keluarga.Fake.jpg', '6881.jpg', 'Nusa Tenggara, Bali', 'Disetujui'),
+(4, 10, '2022-07-21 11:02:00', '765SuratKeteranganPindah.jpg', '145Kartu.Keluarga.Fake.jpg', '2694.jpg', 'Maluku, Maluku Utara', 'Disetujui'),
+(5, 12, '2022-07-21 11:04:00', '937SuratKeteranganPindah.jpg', '637Kartu.Keluarga.Fake.jpg', '2133.jpg', 'Banten, Jawa', 'Disetujui'),
+(6, 8, '2022-07-21 11:06:00', '271SuratKeteranganPindah.jpg', '219Kartu.Keluarga.Fake.jpg', '8185.jpg', 'Sumatra, Jambi', 'Disetujui');
 
 -- --------------------------------------------------------
 
@@ -369,12 +408,12 @@ INSERT INTO `skk` (`idskk`, `idpemohon`, `nikpemohon`, `hubungan`, `waktu1`, `an
 (8, 9, '8', 'Kerabat', '2022-02-04 09:57:00', '1', 'Lapangan Bola', 'Serangan Jantung', '4665.jpg', '127SuratPengantarFAKE.jpg', 'Disetujui'),
 (9, 7, '9', 'ANAK', '2022-02-03 10:19:00', '3', 'Rumah', 'Jatuh dari Lantai 3', '6613.jpg', '326SuratPengantarFAKE.jpg', 'Disetujui'),
 (10, 8, '7', 'Ayah Angkat', '2022-02-04 16:28:00', '1', 'Jalan Raya', 'Kecelakaan dalam berkendara', '2724.jpg', '864SuratPengantarFAKE.jpg', 'Disetujui'),
-(11, 10, '6', 'Kerabat', '2022-02-05 10:46:00', '5', 'Rumah Sakit', 'Usus Jebol', '2251.jpg', '216SuratPengantarFAKE.jpg', 'Menunggu'),
-(12, 11, '10', 'Anak Perempuan', '2022-02-06 11:07:00', '2', 'Rumah Sakit', 'Omicron', '5013.jpg', '537SuratPengantarFAKE.jpg', 'Menunggu'),
-(13, 12, '7', 'Paman', '2022-02-05 15:36:00', '1', 'Rumah Sakit', 'Tumor', '2081.jpg', '229SuratPengantarFAKE.jpg', 'Menunggu'),
+(11, 10, '6', 'Kerabat', '2022-02-05 10:46:00', '5', 'Rumah Sakit', 'Usus Jebol', '2251.jpg', '216SuratPengantarFAKE.jpg', 'Disetujui'),
+(12, 11, '10', 'Anak Perempuan', '2022-02-06 11:07:00', '2', 'Rumah Sakit', 'Omicron', '5013.jpg', '537SuratPengantarFAKE.jpg', 'Disetujui'),
+(13, 12, '7', 'Paman', '2022-02-05 15:36:00', '1', 'Rumah Sakit', 'Tumor', '2081.jpg', '229SuratPengantarFAKE.jpg', 'Disetujui'),
 (14, 13, '9', 'Kerabat', '2022-02-01 15:49:00', '3', 'Jalan Raya', 'Kecelakaan dalam berkendara', '2452.jpg', '944SuratPengantarFAKE.jpg', 'Menunggu'),
-(15, 13, '8', 'Kepala Keluarga', '2022-01-31 15:52:00', '1', 'Rumah', 'Kanker', '9925.jpg', '877SuratPengantarFAKE.jpg', 'Menunggu'),
-(16, 6, '13', 'Anak', '2022-02-04 15:54:00', '3', 'Masjid', 'Stroke Berat', '5365.jpg', '443SuratPengantarFAKE.jpg', 'Menunggu');
+(15, 13, '8', 'Kepala Keluarga', '2022-01-31 15:52:00', '1', 'Rumah', 'Kanker', '9925.jpg', '877SuratPengantarFAKE.jpg', 'Disetujui'),
+(16, 6, '13', 'Anak', '2022-02-04 15:54:00', '3', 'Masjid', 'Stroke Berat', '5365.jpg', '443SuratPengantarFAKE.jpg', 'Disetujui');
 
 -- --------------------------------------------------------
 
@@ -490,7 +529,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `anak`
 --
 ALTER TABLE `anak`
-  MODIFY `idanak` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `idanak` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `detail`
@@ -520,7 +559,7 @@ ALTER TABLE `pemohon`
 -- AUTO_INCREMENT for table `pemohon_detail`
 --
 ALTER TABLE `pemohon_detail`
-  MODIFY `idpemohon_detail` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `idpemohon_detail` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `pengajuan`
@@ -532,13 +571,13 @@ ALTER TABLE `pengajuan`
 -- AUTO_INCREMENT for table `pindah_datang`
 --
 ALTER TABLE `pindah_datang`
-  MODIFY `idpindahdatang` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idpindahdatang` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `pindah_keluar`
 --
 ALTER TABLE `pindah_keluar`
-  MODIFY `idpindahkeluar` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idpindahkeluar` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `skbm`
